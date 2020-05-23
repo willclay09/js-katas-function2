@@ -26,10 +26,11 @@ console.log(power(5, 7))
 
 //Factorial Kata
 function factorial (x){
-    let total = 0
-    for (let i = 0; i < x; i -= 1){
-        total = multiply(x, total)
+   if (x === 0){
+       return 1;
     }
-    return total
+    return x * factorial(x-1);
 }
-console.log(factorial(5))
+console.log(factorial(6))
+
+
