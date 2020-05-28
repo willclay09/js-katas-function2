@@ -16,13 +16,13 @@ console.log(multiply(6, 4))
 
 //Power Kata
 function power (x, y){
-    let total = 0
-    for (let i = 0; i < y; i += 1){
+    let total = 1
+    for(let i = 0; i < y; i += 1){
         total = multiply(x, total)
     }
     return total
 }
-console.log(power(5, 7))
+console.log(power(2, 4));
 
 //Factorial Kata
 function factorial (x){
